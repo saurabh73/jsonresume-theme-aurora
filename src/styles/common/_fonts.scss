@@ -1,0 +1,9 @@
+/* 
+ Font mixin usage
+
+ @include font-face("Ubuntu","#{$font-path}/ubuntu/Ubuntu-Bold", ("eot","woff2","woff","ttf","svg")){
+    font-weight: 700;
+    font-style: normal;
+ }
+  
+ */

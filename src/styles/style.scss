@@ -1,0 +1,31 @@
+@import "common/variables";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~bourbon/core/bourbon";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+// Common
+@import "common/mixins";
+@import "common/fonts";
+@import "common/icons";
+@import "common/global";
+// Layouts
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+
+// Pages
+@import "pages/home";
+
+// Components
+@import "components/welcome";
