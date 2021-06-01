@@ -54,6 +54,9 @@
 		"webpack-dev-server": "^3.3.1"
 	},
 	"dependencies": {
-		"bourbon": "^5.1.0"
+		"bourbon": "^5.1.0",
+		"core-util-is": "^1.0.2",
+		"paper-css": "^0.4.1",
+		"reset-css": "^5.0.1"
 	}
 }

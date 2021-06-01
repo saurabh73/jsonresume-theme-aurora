@@ -6,13 +6,13 @@
  * Prefix your imports with `~` to grab from node_modules/
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
+@import "~reset-css";
 @import "~bourbon/core/bourbon";
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/brands";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~paper-css/paper";
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap');
+
 
 // Common
 @import "common/mixins";
@@ -20,12 +20,12 @@
 @import "common/icons";
 @import "common/global";
 // Layouts
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
+@import "layouts/page";
 
 // Pages
-@import "pages/home";
+@import "pages/intro";
 
 // Components
-@import "components/welcome";
+@import "components/intro-header";
+@import "components/intro-main";
+@import "components/contact";

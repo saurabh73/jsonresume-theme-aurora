@@ -1,0 +1,14 @@
+.intro-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 0;
+  grid-template-areas:
+    "header"
+    "main";
+  width: 100%;
+  height: 100%;
+  // padding:10px;
+}
+header { grid-area: header; }
+main { grid-area: main; }

@@ -1,81 +1,22 @@
-// Fontawesome 5 config
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 // Font Path
 $font-path: "../assets/fonts" !default;
-
-// Glyphicons font path
+//  font path
 $icon-font-path: "../fonts/";
-
 // ICONS
-$icon-font-family: "icnmoon-icon" !default;
-$icon-logo: "\e900";
-$icon-arrow: "\e901";
+$icon-font-family: "icomoon" !default;
+$icon-github: "\e900";
+$icon-gitlab: "\e901";
+$icon-globe: "\e902";
+$icon-linkedin: "\e903";
+$icon-mail: "\e904";
+$icon-phone-call: "\e905";
+$icon-twitter: "\e906";
 
 
-// THEME
-$primary : #00CBFE;
-$secondary :#242424;
-$dark : #000000;
-$light-gray : #EFEFEF;
-$light : #FFFFFF;
-$dark-gray: #717171;
+$side-background: #333333;
+$side-color: #eeeeee;
+$page-background: #eeeeee;
+$page-color: #333333;
+$side-width: 250px;
 
-$enable-rounded : false;
-
-$grid-gutter-width : 16px;
-$grid-columns : 12;
-
-$screen-mobile-padding: 36px;
-
-$screen-xs-min : 0px;
-$screen-sm-min : 576px;
-$screen-md-min : 768px;
-$screen-lg-min : 992px;
-$screen-xl-min : 1200px;
-$screen-hd-min : 1366px;
-$screen-fhd-min : 1920px;
-$screen-rt-min : 2560px;
-$screen-4k-min : 3840px;
-
-$grid-breakpoints: (xs : $screen-xs-min,
-	sm : $screen-sm-min,
-	md : $screen-md-min,
-	lg : $screen-lg-min,
-	xl : $screen-xl-min,
-	hd : $screen-hd-min,
-	fhd : $screen-fhd-min,
-	rt : $screen-rt-min,
-	4k : $screen-4k-min);
-
-$container-max-widths: (sm : 540px,
-	md : 720px,
-	lg : $screen-lg-min*0.8708 - $grid-gutter-width*2,
-	xl : $screen-xl-min*0.8708 - $grid-gutter-width*2,
-	hd : $screen-hd-min*0.8708 - $grid-gutter-width*2,
-	fhd : $screen-fhd-min*0.8708 - $grid-gutter-width*2,
-	rt : $screen-rt-min*0.8708 - $grid-gutter-width*2,
-	4k : $screen-4k-min*0.8708 - $grid-gutter-width*2);
-
-$theme-colors: ("primary" : $primary,
-	"secondary" : $secondary,
-	"dark" : $dark,
-	"light" : $light,
-	"light-gray" : $light-gray,
-	"dark-gray": $dark-gray);
-
-$font-family-sans-serif: "Open-Sans",
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-sans-serif;
-
-
-$hamburger-layer-color : $dark;
-$hamburger-padding-x : 0px;
-$hamburger-padding-y : 3px;
-$hamburger-layer-width : 22px;
-$hamburger-layer-height : 1px;
-$hamburger-types: (collapse);
+$header-font: 'Oswald', "sans-serif";

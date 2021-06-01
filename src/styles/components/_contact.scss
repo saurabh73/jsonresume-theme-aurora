@@ -1,0 +1,49 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "contacts qr-heading"
+    "contacts qr-code";
+
+  .contacts {
+    grid-area: contacts;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      // height: 100%;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: space-evenly;
+     
+    }
+  }
+  .qr-heading {
+    grid-area: qr-heading;
+    text-align: center;
+    color: #1789fc;
+
+    font-family: "Caveat", cursive;
+  }
+  .qr-code {
+    grid-area: qr-code;
+    padding: 3px;
+    &:hover {
+      background: linear-gradient(to right, #1789fc 2px, transparent 2px) 0 0,
+        linear-gradient(to right, #1789fc 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, #1789fc 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, #1789fc 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, #1789fc 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, #1789fc 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, #1789fc 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, #1789fc 2px, transparent 2px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+}

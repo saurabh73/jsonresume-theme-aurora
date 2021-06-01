@@ -4,3 +4,39 @@
 	box-sizing: border-box;
 	outline: none !important;
 }
+
+h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: $header-font;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-weight: 100;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: $header-font;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+// .section-header {
+// 	// margin-bottom: 5px;
+// }
+
+a {
+	text-decoration: none;
+	color: #2a2a2a;
+	&:hover {
+		color: #1789fc;
+	}
+}

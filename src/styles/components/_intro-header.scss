@@ -1,0 +1,31 @@
+header {
+  display: grid;
+  grid-template-columns: $side-width 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  grid-template-areas: "name contact";
+  width: 100%;
+}
+
+.name {
+  grid-area: name;
+  background-color: $side-background;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h1 {
+    color: $side-color;
+  }
+
+  h2 {
+    color: $side-color;
+  }
+}
+
+.contact {
+  grid-area: contact;
+  background-color: $page-background;
+  padding: 5px;
+}

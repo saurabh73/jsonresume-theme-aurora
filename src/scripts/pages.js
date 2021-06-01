@@ -2,18 +2,10 @@ const pages = [
   {
     output: './index.html',
     content: {
-      title: 'Home',
-      description: 'Home Page'
+      title: 'Resume',
+      description: 'Saurabh Dutta Resume'
     },
-    template: './src/pages/home.hbs'
-  },
-  {
-    output: './about/index.html',
-    content: {
-      title: 'About',
-      description: 'About Page'
-    },
-    template: './src/pages/about.hbs'
+    template: './src/index.hbs'
   }
 ]
 

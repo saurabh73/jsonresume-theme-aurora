@@ -1,0 +1,22 @@
+main {
+  display: grid;
+  grid-template-columns: $side-width 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  grid-template-areas: "summary detail";
+  width: 100%;
+}
+
+.summary {
+  grid-area: summary;
+  background-color: $side-background;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.detail {
+  grid-area: detail;
+  background-color: $page-background;
+  border: 1px solid green;
+  padding: 10px;
+}
