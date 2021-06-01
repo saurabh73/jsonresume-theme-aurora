@@ -55,3 +55,8 @@ i {
     content: $icon-twitter;
   }
 }
+.icon-forward {
+  &:before {
+    content: $icon-forward; 
+  }
+}

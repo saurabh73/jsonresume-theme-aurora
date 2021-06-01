@@ -19,7 +19,6 @@
       flex-grow: 1;
       flex-direction: column;
       justify-content: space-evenly;
-     
     }
   }
   .qr-heading {
@@ -30,6 +29,7 @@
     font-family: "Caveat", cursive;
   }
   .qr-code {
+    position: relative;
     grid-area: qr-code;
     padding: 3px;
     &:hover {
@@ -44,6 +44,36 @@
 
       background-repeat: no-repeat;
       background-size: 20px 20px;
+    }
+
+    &:after {
+      content: "scan to save my contact";
+      position: absolute;
+      width: 100px;
+      top: 20px;
+      left: -100px;
+      font-family: "Yellowtail", cursive;
+      font-size: 24px;
+      color: #1789fc;
+      display: inline-block;
+      transform: rotate(-20deg);
+    }
+    &:before {
+      content: $icon-forward;
+      font-family: "#{$icon-font-family}" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      position: absolute;
+      width: 100px;
+      top: 55px;
+      left: -50px;
+      font-size: 40px;
+      color: #1789fc;
+      display: inline-block;
+      transform: rotate(-20deg);
     }
   }
 }
