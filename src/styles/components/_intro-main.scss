@@ -1,22 +1,29 @@
-main {
+div.intro {
   display: grid;
   grid-template-columns: $side-width 1fr;
   grid-template-rows: 1fr;
   gap: 0;
   grid-template-areas: "summary detail";
   width: 100%;
+
 }
 
 .summary {
   grid-area: summary;
   background-color: $side-background;
-  border: 1px solid green;
-  padding: 10px;
+  color: $side-color;
+  // border-top: 1px solid $page-color;
+  padding: $page-margin*0.25 $page-margin*0.5 $page-margin $page-margin;
+  display: flex;
+  flex-flow: column;
 }
 
 .detail {
   grid-area: detail;
   background-color: $page-background;
-  border: 1px solid green;
-  padding: 10px;
+  color: $page-color;
+  // border-top: 1px solid $page-color;
+  padding: $page-margin*0.25 $page-margin $page-margin $page-margin*0.5;
+  display: flex;
+  flex-flow: column;
 }

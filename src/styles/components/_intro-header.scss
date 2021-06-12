@@ -10,7 +10,7 @@ header {
 .name {
   grid-area: name;
   background-color: $side-background;
-  padding: 10px;
+  padding: $page-margin $page-margin*0.5 $size-10 $page-margin;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,12 +20,12 @@ header {
   }
 
   h2 {
-    color: $side-color;
+    color: $highlight-color;
   }
 }
 
 .contact {
   grid-area: contact;
   background-color: $page-background;
-  padding: 5px;
+  // padding: 5px;
 }

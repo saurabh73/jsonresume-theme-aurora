@@ -1,0 +1,15 @@
+section.awards {
+  ul {
+    list-style-type: "-  ";
+    padding-left: $size-10;
+    li {
+      &:before, &::marker {
+        color:$highlight-color;
+      }
+      margin: $size-10*0.5 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

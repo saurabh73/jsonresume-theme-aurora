@@ -1,0 +1,27 @@
+.education {
+
+  ul.education-list {
+    // height: 100%;
+    margin-top: $size-10;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li.education-item {
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .institution {
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      .duration {
+        font-size: 16px;
+      }
+      margin-bottom: $size-10*1.5;
+    }
+  }
+}

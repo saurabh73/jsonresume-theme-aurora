@@ -13,7 +13,7 @@
 // Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 // Common
 @import "common/mixins";
 @import "common/fonts";
@@ -24,8 +24,14 @@
 
 // Pages
 @import "pages/intro";
+@import "pages/project";
 
 // Components
 @import "components/intro-header";
 @import "components/intro-main";
 @import "components/contact";
+@import "components/education";
+@import "components/skill";
+@import "components/awards";
+@import "components/certificates";
+@import "components/work-experience";

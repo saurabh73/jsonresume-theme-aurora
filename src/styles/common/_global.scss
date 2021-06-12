@@ -5,16 +5,27 @@
 	outline: none !important;
 }
 
+body {
+	font-family: $body-font;
+
+	&.A4 {
+		.sheet {
+			height: 297mm !important;
+		}
+	}
+}
+
+
+
 h1 {
-	font-size: 40px;
+	font-size: 4*$size-10;
 	text-transform: uppercase;
 	font-family: $header-font;
-	margin-bottom: 5px;
 	letter-spacing: 2px;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 2*$size-10;
 	font-family: $header-font;
 	text-transform: uppercase;
 	font-weight: 100;
@@ -29,14 +40,27 @@ h3 {
 	letter-spacing: 2px;
 }
 
-// .section-header {
-// 	// margin-bottom: 5px;
-// }
+h3.section-header {
+	display: flex;
+	flex-direction: row;
+	color: $highlight-color;
+	justify-content: space-between;
+	align-items:flex-end;
+
+	.sub-title {
+		font-size: 14px;
+		color: $page-color;
+		font-family: $body-font;
+		text-transform: initial;
+	}
+}
+
 
 a {
 	text-decoration: none;
-	color: #2a2a2a;
+	color: $page-color;
 	&:hover {
-		color: #1789fc;
+		// color: $highlight-color;
+		text-decoration: underline;
 	}
 }
