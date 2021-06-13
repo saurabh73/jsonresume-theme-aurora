@@ -6,15 +6,16 @@ const Glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractSASS = new ExtractTextPlugin("./[name].[hash].css");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackInlineStylePlugin = require('html-webpack-inline-style-plugin');
 
 const PATHS = {
 	src: Path.join(__dirname, "src"),
-	dest: Path.join(__dirname, "dist")
+	dest: Path.join(__dirname, "public")
 };
 
+// TODO: Not needed
 const pages = require("./src/scripts/pages");
 let renderedPages = [];
 for (let i = 0; i < pages.length; i++) {
@@ -24,7 +25,8 @@ for (let i = 0; i < pages.length; i++) {
 			template: page.template,
 			filename: page.output,
 			title: page.content.title,
-			description: page.content.description
+			description: page.content.description,
+			inject: true
 		})
 	);
 }
@@ -112,18 +114,16 @@ module.exports = (options) => {
 		}
 	};
 
+	// Production Only
 	if (options.isProduction) {
 		webpackConfig.plugins.push(
 			ExtractSASS,
-			new CleanWebpackPlugin(["dist"], {
-				verbose: true,
-				dry: false
-			}),
 			new PurgecssPlugin({
 				paths: Glob.sync(`${PATHS.src}/**/*`, {
 					nodir: true
 				})
-			})
+			}),
+			new HtmlWebpackInlineStylePlugin()
 		);
 
 		webpackConfig.module.rules.push({
@@ -166,7 +166,5 @@ module.exports = (options) => {
 	}
 
 	webpackConfig.plugins = webpackConfig.plugins.concat(renderedPages);
-
 	return webpackConfig;
-
 };
