@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Language" content="en">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>{{ htmlWebpackPlugin.options.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
-  />
-  <meta name="description" content="{{ htmlWebpackPlugin.options.description }}">
+  <title>{{#basics}}{{name}}{{/basics}}</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="{{#basics}}{{summary}}{{/basics}}">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -19,7 +19,14 @@
 </head>
 
 <body class="A4">
-  {{> @partial-block }}
+  <div id="resume">
+    <div class="sheet intro-page">
+      {{> intro}}
+    </div>
+    <div class="sheet project-page">
+      {{> project}}
+    </div>
+  </div>
 </body>
 
 </html>

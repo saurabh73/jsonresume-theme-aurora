@@ -1,12 +1,17 @@
 const fs = require("fs");
-const path = require('path');
+const Path = require('path');
 
 const config = require('./webpack-prod.config.js');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const compiler = webpack(config);
+const PATHS = {
+	src: Path.join(__dirname, "src"),
+	dest: Path.join(__dirname, "public")
+};
 
-async function runWebpack() {
+
+async function runWebpack(compiler) {
   await new Promise((resolve, reject) => {
     compiler.run((err, res) => {
       if (err) {
@@ -17,11 +22,23 @@ async function runWebpack() {
   });
 }
 
+// TODO: return index.html with inline template
 async function render(resume) {
-  await runWebpack();
-  const filepath = path.join(__dirname, "public", "index.html")
+  // extract and replace HtmlWebpackPlugin with provided resume
+  const plugins = config.plugins.filter(i => ((i instanceof HtmlWebpackPlugin) == false));
+  plugins.push(
+    new HtmlWebpackPlugin({
+      template: "./src/resume.hbs", 
+      filename: "index.html",
+      templateParameters: resume
+    })
+  );
+  config.plugins = plugins;
+  const compiler = webpack(config);
+  await runWebpack(compiler);
+  const filepath = Path.join(PATHS.dest, "index.html")
   return fs.readFileSync(filepath, "utf-8");
 }
 module.exports = {
-	render: render
+  render: render
 };

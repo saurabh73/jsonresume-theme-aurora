@@ -15,21 +15,6 @@ const PATHS = {
 	dest: Path.join(__dirname, "public")
 };
 
-// TODO: Not needed
-const pages = require("./src/scripts/pages");
-let renderedPages = [];
-for (let i = 0; i < pages.length; i++) {
-	let page = Object.assign({}, pages[i]);
-	renderedPages.push(
-		new HtmlWebpackPlugin({
-			template: page.template,
-			filename: page.output,
-			title: page.content.title,
-			description: page.content.description,
-			inject: true
-		})
-	);
-}
 
 module.exports = (options) => {
 
@@ -41,22 +26,21 @@ module.exports = (options) => {
 			filename: "./scripts/[name].[hash].js"
 		},
 		plugins: [
-			new Webpack.ProvidePlugin({
-				$: "jquery",
-				jQuery: "jquery",
-				"window.jQuery": "jquery",
-				Tether: "tether",
-				"window.Tether": "tether",
-				Popper: ["popper.js", "default"],
+			new HtmlWebpackPlugin({
+				template: './src/resume.hbs',
+				filename: "index.html",
+				templateParameters:require('./resume.json')
 			}),
-			new CopyWebpackPlugin([{
-				from: Path.join(PATHS.src, "assets"),
-				to: "./assets"
-			}]),
-			new CopyWebpackPlugin([{
-				from: Path.join(PATHS.src, "favicon.ico"),
-				to: "./"
-			}]),
+			new CopyWebpackPlugin([
+				{
+					from: Path.join(PATHS.src, "assets"),
+					to: "./assets"
+				},
+				{
+					from: Path.join(PATHS.src, "favicon.ico"),
+					to: "./"
+				}
+			]),
 			new Webpack.DefinePlugin({
 				"process.env": {
 					NODE_ENV: JSON.stringify(options.isProduction ? "production" : "development")
@@ -65,51 +49,51 @@ module.exports = (options) => {
 		],
 		module: {
 			rules: [{
-					test: /\.js$/,
-					exclude: /node_modules/,
-					loader: "babel-loader"
-				},
-				{
-					test: /\.hbs$/,
-					loader: "handlebars-loader",
-					query: {
-						helperDirs: [Path.join(PATHS.src, "helpers")],
-						partialDirs: [
-							Path.join(PATHS.src, "layouts"),
-							Path.join(PATHS.src, "components"),
-							Path.join(PATHS.src, "pages")
-						]
-					}
-				},
-				{
-					test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-					exclude: [/images/],
-					use: [{
-						loader: "file-loader",
-						options: {
-							name: "[name].[ext]",
-							outputPath: "./assets/fonts"
-						}
-					}]
-				},
-				{
-					test: /\.(png|jpg|jpeg|gif|svg)$/,
-					loader: "file-loader",
-					exclude: [/fonts/],
-					options: {
-						name: "[name].[ext]",
-						outputPath: "./assets/images"
-					}
-				},
-				{
-					test: /\.(ico)$/,
-					loader: "file-loader",
-					exclude: [/fonts/],
-					options: {
-						name: "[name].[ext]",
-						outputPath: "./"
-					}
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: "babel-loader"
+			},
+			{
+				test: /\.hbs$/,
+				loader: "handlebars-loader",
+				query: {
+					helperDirs: [Path.join(PATHS.src, "helpers")],
+					partialDirs: [
+						Path.join(PATHS.src, "partials"),
+						Path.join(PATHS.src, "components"),
+						Path.join(PATHS.src, "pages")
+					]
 				}
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				exclude: [/images/],
+				use: [{
+					loader: "file-loader",
+					options: {
+						name: "[name].[ext]",
+						outputPath: "./assets/fonts"
+					}
+				}]
+			},
+			{
+				test: /\.(png|jpg|jpeg|gif|svg)$/,
+				loader: "file-loader",
+				exclude: [/fonts/],
+				options: {
+					name: "[name].[ext]",
+					outputPath: "./assets/images"
+				}
+			},
+			{
+				test: /\.(ico)$/,
+				loader: "file-loader",
+				exclude: [/fonts/],
+				options: {
+					name: "[name].[ext]",
+					outputPath: "./"
+				}
+			}
 			]
 		}
 	};
@@ -122,8 +106,7 @@ module.exports = (options) => {
 				paths: Glob.sync(`${PATHS.src}/**/*`, {
 					nodir: true
 				})
-			}),
-			new HtmlWebpackInlineStylePlugin()
+			})
 		);
 
 		webpackConfig.module.rules.push({
@@ -164,7 +147,5 @@ module.exports = (options) => {
 			}
 		};
 	}
-
-	webpackConfig.plugins = webpackConfig.plugins.concat(renderedPages);
 	return webpackConfig;
 };
