@@ -12,7 +12,7 @@ section.work-experience {
     justify-content: space-between;
 
     li.experience-item {
-      a.title {
+      .title {
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 4px;
@@ -35,15 +35,25 @@ section.work-experience {
         margin-bottom: 4px;
       }
 
+      .detail-row {
+        // font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        strong {
+          color: $highlight-color;
+        }
+      }
       p.description {
         margin-bottom: 4px;
         text-align: justify;
       }
 
-      strong {
-        font-weight: bold;
-        font-size: 14px;
-      }
+      // strong {
+      //   font-weight: bold;
+      //   font-size: 14px;
+      // }
       .tech-tags {
         display: flex;
         flex-direction: row;

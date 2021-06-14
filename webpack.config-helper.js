@@ -101,12 +101,7 @@ module.exports = (options) => {
 	// Production Only
 	if (options.isProduction) {
 		webpackConfig.plugins.push(
-			ExtractSASS,
-			new PurgecssPlugin({
-				paths: Glob.sync(`${PATHS.src}/**/*`, {
-					nodir: true
-				})
-			})
+			ExtractSASS
 		);
 
 		webpackConfig.module.rules.push({

@@ -6,15 +6,14 @@
   grid-template-areas:
     "contacts qr-heading"
     "contacts qr-code";
-  padding: $page-margin $page-margin $size-10 $page-margin*0.5;
+  padding: $page-margin $page-margin $size-10 $page-margin * 0.5;
 
   .contacts {
     grid-area: contacts;
-    padding: $size-10*0.5;
+    padding: $size-10 * 0.5;
     display: flex;
     flex-direction: column;
     ul {
-      // height: 100%;
       margin-top: $size-10;
       display: flex;
       flex-grow: 1;
@@ -67,7 +66,7 @@
         linear-gradient(to top, $highlight-color 2px, transparent 2px) 100% 100%;
 
       background-repeat: no-repeat;
-      background-size: $size-10*2 $size-10*2;
+      background-size: $size-10 * 2 $size-10 * 2;
     }
 
     &:hover {
@@ -81,37 +80,37 @@
         linear-gradient(to top, $highlight-color 2px, transparent 2px) 100% 100%;
 
       background-repeat: no-repeat;
-      background-size: $size-10*2 $size-10*2;
-    }
+      background-size: $size-10 * 2 $size-10 * 2;
 
-    // &:after {
-    //   content: "scan to save my contact";
-    //   position: absolute;
-    //   width: 100px;
-    //   top: 20px;
-    //   left: -100px;
-    //   font-family: "Yellowtail", cursive;
-    //   font-size: 24px;
-    //   color: $highlight-color;
-    //   display: inline-block;
-    //   transform: rotate(-20deg);
-    // }
-    // &:before {
-    //   content: $icon-forward;
-    //   font-family: "#{$icon-font-family}" !important;
-    //   font-style: normal;
-    //   font-weight: normal;
-    //   font-variant: normal;
-    //   text-transform: none;
-    //   line-height: 1;
-    //   position: absolute;
-    //   width: 100px;
-    //   top: 55px;
-    //   left: -50px;
-    //   font-size: 40px;
-    //   color: $highlight-color;
-    //   display: inline-block;
-    //   transform: rotate(-20deg);
-    // }
+      &:after {
+        content: "scan to save my contact";
+        position: absolute;
+        width: 100px;
+        top: 20px;
+        left: -100px;
+        font-family: "Yellowtail", cursive;
+        font-size: 24px;
+        color: $highlight-color;
+        display: inline-block;
+        transform: rotate(-20deg);
+      }
+      &:before {
+        content: $icon-forward;
+        font-family: "#{$icon-font-family}" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        position: absolute;
+        width: 100px;
+        top: 55px;
+        left: -50px;
+        font-size: 40px;
+        color: $highlight-color;
+        display: inline-block;
+        transform: rotate(-20deg);
+      }
+    }
   }
 }

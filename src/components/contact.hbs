@@ -3,23 +3,20 @@
   <ul>
     <li>
       <i class="icon icon-mail"></i>
-      <a href="mailto:mail@saubhdutta.dev" target="__blank">mail@saubhdutta.dev</a>
+      <a href="mailto:{{basics.email}}" target="__blank">{{basics.email}}</a>
     </li>
     <li>
       <i class="icon icon-globe"></i>
-      <a href="https://saurabhdutta.dev" target="__blank">saurabhdutta.dev</a>
+      <a href="{{basics.website}}" target="__blank">{{basics.website}}</a>
     </li>
+     {{#each basics.profiles}}
     <li>
-      <i class="icon icon-github"></i>
-      <a href="https://github.com/saurabh73" target="__blank">github.com/saurabh73</a>
+      <i class="icon icon-{{network}}"></i>
+      <a href="{{url}}" target="__blank">{{network}}/{{username}}</a>
     </li>
-    <li>
-      <i class="icon icon-linkedin"></i>
-      <a href="https://linkedin.com/in/saurabh-dutta/" target="__blank">linkedin.com/in/saurabh-dutta/</a>
-    </li>
+    {{/each}}
   </ul>
 </summary>
-<!-- <div class="qr-heading">Save my contact</div> -->
 <div class="qr-code">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1098 1098">
     <defs />

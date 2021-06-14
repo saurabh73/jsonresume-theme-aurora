@@ -1,164 +1,313 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  },
   "basics": {
     "name": "Saurabh Dutta",
-    "label": "Programmer",
-    "image": "",
+    "label": "Full Stack Developer",
+    "picture": "",
     "email": "mail@saurabhdutta.dev",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "phone": "+919650897823",
+    "website": "https://saurabdutta.dev",
+    "summary": "Hey! I'm Saurabh, a full-stack developer, who strives to develop efficient backend solutions and design beautiful & user-friendly user interfaces. This is my home on the web where I post my thoughts and showcase my work and a bit about myself.\nI'm an avid podcast listener and a horror movie buff. In my free time, I also do like to do some competitive programming.\nI try my hands on a lot of things but I consider myself best at Java & Javascript. For the backend, I mostly use Express framework or Spring framework with git as the version control system. For the frontend, I work best with Angular, also learning React now. For the Database, I like Mongo and PostgreSQL.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "MIG B/124 Ganpati Enclave, Kolar Road",
+      "city": "Bhopal",
+      "countryCode": "India",
+      "postalCode": "462042",
+      "region": "Madhya Pradesh"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "network": "linkedin",
+        "url": "https://www.linkedin.com/in/saurabh-dutta/",
+        "username": "saurabh-dutta"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "github",
+        "url": "https://github.com/saurabh73",
+        "username": "saurabh73"
       }
     ]
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
+      "company": "Wipro Technology",
+      "position": "Technologist",
+      "startDate": "2016-01-04",
+      "summary": "Working as a Technologist in an innovation-led, digital transformation partner built for today’s digital challenges. My current project is for Capital One.",
+      "website": "https://www.wipro.com"
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
+      "company": "Infogain India Pvt. Ltd.",
+      "endDate": "2015-12-31",
+      "position": "Software Engineer",
+      "startDate": "2014-10-01",
+      "summary": "Worked as Software Engineer, and got hands-on experience on various technologies credits to extensive Instructor-led training program of Infogain. I worked for NCR Corporation for my project engagement on their monitoring product called VISION, which monitors administer ATMs for their various Banking clients. The project included the development of RESTful web services.",
+      "website": "https://www.infogain.com/"
+    },
+    {
+      "company": "Wipro Technologies",
+      "endDate": "2013-07-01",
+      "position": "Intern",
+      "startDate": "2013-05-01",
+      "summary": "This Internship helped me to gain knowledge about Software Development Cycle and XML parsing and enhanced my Java skills.",
+      "website": "https://www.wipro.com/"
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
+      "area": "Computer Science & Engineering",
+      "endDate": "2014-06-30",
+      "gpa": "76.96%",
+      "institution": "University of Allahabad",
+      "startDate": "2010-07-01",
+      "studyType": "B.Tech"
     }
   ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "awarder": "Infogain Pvt. Ltd.",
+      "date": "2015-04-01",
+      "summary": "Best Junior Engineer for the quarter Jan-Mar 2015",
+      "title": "Best Junior Engineer"
+    },
+    {
+      "awarder": "Wipro Technologies",
+      "date": "2017-02-01",
+      "summary": "Won 4th position in Digirupt 2016, a hackathon conducted by Wipro Digital for project Ambuhelp",
+      "title": "Digirupt 3rd Runner Up"
+    },
+    {
+      "awarder": "Wipro Technologies",
+      "date": "2018-12-01",
+      "summary": "Awarded as Best Consultant/Technical Expert for contribution to Capital One client.",
+      "title": "Best Consultant/Technical Expert"
+    },
+    {
+      "awarder": "Wipro Technologies",
+      "date": "2018-08-01",
+      "summary": "Topcoder challenge winner (Wipro Hosted) for pdf to\nJSON parser for CIOMS forms (Medical Records)",
+      "title": "Winner for Topcoder Challenge"
     }
   ],
-  "publications": [
+  "certificates": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "certId": "F1801MVZ",
+      "issuer": "CodeChef",
+      "url": "https://res.cloudinary.com/dren4jgbp/image/upload/v1623634325/resume/codechef.pdf",
+      "name": "CodeChef Certified Foundation Level Exam",
+      "date": "2018-01-21"
+    },
+    {
+      "certId": "1K1CRS4K1241QZ5D",
+      "issuer": "Amazon",
+      "url": "https://res.cloudinary.com/dren4jgbp/image/upload/v1581549686/resume/AWS_Certified_Developer_-_Associate_certificate.pdf",
+      "name": "AWS Certified Developer - Associate",
+      "date": "2016-12-29"
+    },
+    {
+      "issuer": "IBM",
+      "certId": "IBM000136371",
+      "url": "https://www.youracclaim.com/badges/a8c885bb-e3cb-4b7c-932f-6a6408998bbf/linked_in_profile",
+      "name": "IBM Certified Application Developer - Cloud Platform V1",
+      "date": "2016-06-10"
+    },
+    {
+      "issuer": "MongoDB, Inc.",
+      "url": "https://res.cloudinary.com/dren4jgbp/image/upload/v1623634556/resume/MongoCertificate.pdf",
+      "name": "M101J: MongoDB for Java Developers",
+      "date": "2015-02-26"
+    },
+    {
+      "issuer": "Microsoft",
+      "certId": "E190-6465",
+      "url": "https://res.cloudinary.com/dren4jgbp/image/upload/v1623633993/resume/microsoft-certificate.pdf",
+      "name": "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3",
+      "date": "2013-03-04"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
+      "name": "Java",
+      "category": "Programming Languages",
+      "icon": "devicon-java-plain",
+      "level": "expert"
     },
     {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
+      "name": "Javascript",
+      "category": "Programming Languages",
+      "icon": "devicon-javascript-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "Python",
+      "category": "Programming Languages",
+      "icon": "devicon-python-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Go",
+      "category": "Programming Languages",
+      "icon": "devicon-go-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Spring",
+      "category": "Backend technologies",
+      "icon": "devicon-spring-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend technologies",
+      "icon": "devicon-nodejs-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "Express.js",
+      "category": "Backend technologies",
+      "icon": "devicon-express-original",
+      "level": "intermediate"
+    },
+    {
+      "name": "HTML5",
+      "category": "Frontend technologies",
+      "icon": "devicon-html5-plain",
+      "level": "expert"
+    },
+    {
+      "name": "CSS3",
+      "category": "Frontend technologies",
+      "icon": "devicon-css3-plain",
+      "level": "expert"
+    },
+    {
+      "name": "JQuery",
+      "category": "Frontend technologies",
+      "icon": "devicon-jquery-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "Angular",
+      "category": "Frontend technologies",
+      "icon": "devicon-angularjs-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "React",
+      "category": "Frontend technologies",
+      "icon": "devicon-react-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "Flutter",
+      "category": "Frontend technologies",
+      "icon": "devicon-flutter-plain",
+      "level": "basic"
+    },
+    {
+      "name": "PostgreSql",
+      "category": "Database",
+      "icon": "devicon-postgresql-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "icon": "devicon-mongodb-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "Redis",
+      "category": "Database",
+      "icon": "devicon-redis-plain",
+      "level": "basic"
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud & Platforms",
+      "icon": "devicon-amazonwebservices-plain",
+      "level": "advanced"
+    },
+    {
+      "name": "Digital Ocean",
+      "category": "Cloud & Platforms",
+      "icon": "devicon-digitalocean-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Heroku",
+      "category": "Cloud & Platforms",
+      "icon": "devicon-heroku-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Docker",
+      "category": "Tools & Technologies",
+      "icon": "devicon-docker-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "GraphQL",
+      "category": "Tools & Technologies",
+      "icon": "devicon-graphql-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Gradle",
+      "category": "Tools & Technologies",
+      "icon": "devicon-gradle-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "Webpack",
+      "category": "Tools & Technologies",
+      "icon": "devicon-webpack-plain",
+      "level": "basic"
+    },
+    {
+      "name": "Typescript",
+      "category": "Tools & Technologies",
+      "icon": "devicon-typescript-plain",
+      "level": "intermediate"
+    },
+    {
+      "name": "Nginx",
+      "category": "Tools & Technologies",
+      "icon": "devicon-nginx-plain",
+      "level": "basic"
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Bengali",
+      "fluency": "Fluent"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
+      "name": "Podcasts"
+    },
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
+      "name": "Competitive programming"
+    },
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
-      "roles": [
-        "Team lead",
-        "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
+      "name": "Listening to music"
+    },
+    {
+      "name": "Movies & Shows"
     }
-  ],
-  "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
-  }
+  ]
 }

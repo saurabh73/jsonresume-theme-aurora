@@ -1,2 +1,20 @@
-{{> intro-header}}
-{{> intro-main}}
+<header>
+  <aside class="name">
+    <h1>{{basics.name}}</h1>
+    <h2>{{basics.label}}</h2>
+  </aside>
+  <section class="contact">
+    {{>contact}}
+  </section>
+</header>
+<div class="intro">
+  <aside class="summary">
+    {{>education}}
+    {{>skill}}
+  </aside>
+  <main class="detail">
+    {{>work-experience}}
+    {{>certificates}}
+    {{>awards}}
+  </main>
+</div>

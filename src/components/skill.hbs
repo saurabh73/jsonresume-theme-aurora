@@ -1,63 +1,11 @@
 <section class="skill">
     <h3 class="section-header">Skills</h3>
     <ul class="skill-category-list">
+        {{#each (skillCategory skills) as | category |}}
         <li class="skill-category-item">
-            <h4 class="skill-category-title"># Programming Languages</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-java-plain"></i> Java</li>
-                <li><i class="devicon-javascript-plain"></i> Javascript</li>
-                <li><i class="devicon-python-plain"></i> Python</li>
-                <li><i class="devicon-go-plain"></i> Go</li>
-                <li><i class="devicon-kotlin-plain"></i> Kotlin</li>
-            </ul>
+            <h4 class="skill-category-title"># {{category}}</h4>
+            {{> skill-list skills=../skills category=category}}
         </li>
-        <li class="skill-category-item">
-            <h4 class="skill-category-title"># Backend technologies</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-spring-plain"></i> Spring</li>
-                <li><i class="devicon-nodejs-plain"></i> Node.js</li>
-                <li><i class="devicon-express-original"></i> Express.js</li>
-            </ul>
-        </li>
-        <li class="skill-category-item">
-            <h4 class="skill-category-title"># Frontend technologies</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-html5-plain"></i> HTML5</li>
-                <li><i class="devicon-css3-plain"></i> CSS3</li>
-                <li><i class="devicon-jquery-plain"></i> JQuery</li>
-                <li><i class="devicon-bootstrap-plain"></i> Bootstrap</li>
-                <li><i class="devicon-angularjs-plain"></i> Angular</li>
-                <li><i class="devicon-react-original"></i> React</li>
-                <li><i class="devicon-flutter-plain"></i> Flutter</li>
-            </ul>
-        </li>
-        <li class="skill-category-item">
-            <h4 class="skill-category-title"># Database</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-postgresql-plain"></i> PostgreSql</li>
-                <li><i class="devicon-mongodb-plain"></i> MongoDB</li>
-                <li><i class="devicon-redis-plain"></i> Redis</li>
-            </ul>
-        </li>
-        <li class="skill-category-item">
-            <h4 class="skill-category-title"># Tools & Technologies</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-docker-plain"></i> Docker</li>
-                <li><i class="devicon-graphql-plain"></i> GraphQL</li>
-                <li><i class="devicon-gradle-plain"></i> Gradle</li>
-                <li><i class="devicon-webpack-plain"></i> Webpack</li>
-                <li><i class="devicon-gulp-plain"></i> Gulp</li>
-                <li><i class="devicon-nginx-plain"></i> Nginx</li>
-            </ul>
-        </li>
-        <li class="skill-category-item">
-            <h4 class="skill-category-title"># Cloud & Platforms</h4>
-            <ul class="skill-list">
-                <li><i class="devicon-amazonwebservices-plain"></i> AWS</li>
-                <li><i class="devicon-digitalocean-plain"></i> Digital Ocean</li>
-                <li><i class="devicon-heroku-plain"></i> Heroku</li>
-            </ul>
-        </li>
+        {{/each}}
     </ul>
-
 </section>
