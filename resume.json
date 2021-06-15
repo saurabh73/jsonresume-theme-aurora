@@ -38,7 +38,7 @@
       "company": "Wipro Technology",
       "position": "Technologist",
       "startDate": "2016-01-04",
-      "summary": "Working as a Technologist in an innovation-led, digital transformation partner built for today’s digital challenges. My current project is for Capital One.",
+      "summary": "Lorem ipsum dolor sit amet,adipiscing elit. Donec eu ullamcorper ex, ut pellentesque tellus. Vivamus eu nibh id urna molestie cursus. Nulla tempor, ex in interdum aliquet, tellus justo volutpat sem, in fringilla lorem orci ac est. Morbi risus nunc, tempus id nisi eget, semper elementum neque. Maecenas eu quam nibh. Aliquam dignissim efficitur ex, sed dignissim arcu finibus sit amet. Vestibulum tincidunt finibus orci, malesuada tempor est tempus vitae.  Nunc malesuada nulla quis tellus facilisis molestie. Ut hendrerit metus at lobortis tempus. Sed a blandit lectus.",
       "website": "https://www.wipro.com"
     },
     {
@@ -274,12 +274,6 @@
       "category": "Tools & Technologies",
       "icon": "devicon-typescript-plain",
       "level": "intermediate"
-    },
-    {
-      "name": "Nginx",
-      "category": "Tools & Technologies",
-      "icon": "devicon-nginx-plain",
-      "level": "basic"
     }
   ],
   "languages": [

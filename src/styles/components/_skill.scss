@@ -14,19 +14,10 @@ section.skill {
         font-weight: bold;
       }
       .skill-list {
-        font-family: monospace;
+        font-family: $monospace-font;
         font-size: 14px;
-        // font-size: 16px;;
         list-style-type: "- ";
         list-style-position: inside;
-
-       
-       
-        line-height: 1;
-   
-          
-        vertical-align: text-bottom;
-        // padding-left: 14px;
         li {
           &:before, &::marker {
             color:$highlight-color;

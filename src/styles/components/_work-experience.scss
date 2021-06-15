@@ -44,6 +44,10 @@ section.work-experience {
         strong {
           color: $highlight-color;
         }
+        .year {
+          font-family: $monospace-font;
+          font-size: 14px;
+        }
       }
       p.description {
         margin-bottom: 4px;

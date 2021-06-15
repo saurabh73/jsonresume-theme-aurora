@@ -21,6 +21,11 @@ section.certificates {
         strong {
           color: $highlight-color;
         }
+
+        .year {
+          font-family: $monospace-font;
+          font-size: 14px;
+        }
       }
       margin-bottom: $size-10*1.5;
     }
