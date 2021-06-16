@@ -2,16 +2,16 @@
   <h3 class="section-header">Contact & Profiles</h3>
   <ul>
     <li>
-      <i class="icon icon-mail"></i>
+      <i class="icon" data-feather="mail"></i>
       <a href="mailto:{{basics.email}}" target="__blank">{{basics.email}}</a>
     </li>
     <li>
-      <i class="icon icon-globe"></i>
+      <i class="icon" data-feather="globe"></i>
       <a href="{{basics.website}}" target="__blank">{{basics.website}}</a>
     </li>
-     {{#each basics.profiles}}
+    {{#each basics.profiles}}
     <li>
-      <i class="icon icon-{{network}}"></i>
+      <i class="icon" data-feather="{{network}}"></i>
       <a href="{{url}}" target="__blank">{{network}}/{{username}}</a>
     </li>
     {{/each}}

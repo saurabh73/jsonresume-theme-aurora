@@ -21,8 +21,16 @@
       justify-content: space-between;
 
       li {
-        i {
-          margin-right: 8px;
+        // i {
+        //   margin-right: 8px;
+        // }
+        .feather.icon {
+          font-size: 1rem;
+          height: 1rem;
+          width: auto;
+          margin-bottom: -3px;
+          margin-right: 2px;
+          stroke: var(--highlight-color);
         }
       }
     }
@@ -69,6 +77,10 @@
       background-size: $size-10 * 2 $size-10 * 2;
     }
 
+    .svg-icon {
+      fill: var(--highlight-color) !important;
+    }
+
     &:hover {
       background: linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 0,
         linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 100%,
@@ -95,21 +107,16 @@
         transform: rotate(-20deg);
       }
       &:before {
-        content: $icon-forward;
-        font-family: "#{$icon-font-family}" !important;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
+        content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20fill%3D%22%232D2D2D%22%20d%3D%22M44%2062l-.72-10.977-.086-1.405-.63-9.573-4.837%204.838-1.214-1.272a17.344%2017.344%200%2001-2.177-2.5l-1.987-2.661a30.134%2030.134%200%2001-1.621-2.85l-.8-1.448c-.219-.512-.38-1.024-.569-1.536a23.716%2023.716%200%2001-1.079-3.16%2029.3%2029.3%200%2001-.3-13.818A37.577%2037.577%200%200133.836%202a39.759%2039.759%200%2000-9.751%2012.237%2035.91%2035.91%200%2000-4.049%2016.092%2030.83%2030.83%200%2000.213%204.318c.058.7.1%201.449.2%202.166l.465%202.107c.35%201.405.582%202.9%201.048%204.244l1.546%204.067a23.967%2023.967%200%20001.839%203.92l2.058%203.818c.029.058.058.087.088.146l-5.454%205.453z%22%2F%3E%3C%2Fsvg%3E");
         position: absolute;
-        width: 100px;
-        top: 55px;
-        left: -50px;
-        font-size: 40px;
-        color: var(--highlight-color);
         display: inline-block;
-        transform: rotate(-20deg);
+        transform: rotate(-60deg);
+        line-height: 1;
+        width: 32px;
+        height: 32px;
+        top: 65px;
+        left: -50px;
+        color: var(--highlight-color);
       }
     }
   }
