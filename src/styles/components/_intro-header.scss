@@ -9,23 +9,23 @@ header {
 
 .name {
   grid-area: name;
-  background-color: $side-background;
+  background-color: var(--side-background);
   padding: $page-margin $page-margin*0.5 $size-10 $page-margin;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   h1 {
-    color: $side-color;
+    color: var(--side-color);
   }
 
   h2 {
-    color: $highlight-color;
+    color: var(--highlight-color);
   }
 }
 
 .contact {
   grid-area: contact;
-  background-color: $page-background;
+  background-color: var(--page-background);
   // padding: 5px;
 }

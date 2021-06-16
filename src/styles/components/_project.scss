@@ -1,0 +1,76 @@
+.project-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.project-list {
+  margin-top: $size-10;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  .project-item {
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .role {
+      color: var(--highlight-color);
+      margin-bottom: 4px;
+    }
+
+    .description {
+      margin-bottom: 4px;
+      text-align: justify;
+    }
+
+    .website {
+      color: var(--highlight-color);
+      text-decoration: underline;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-direction: row;
+      font-family: monospace;
+      font-size: 14px;
+      flex-wrap: wrap;
+      column-gap: 0.5em;
+      row-gap: 0.5em;
+      padding: $size-10 0;
+      li.badge {
+        display: flex;
+        // flex-wrap: wrap;
+        // margin: 0.5em 0;
+        // background-color: var(--side-background);
+        // color: var(--side-color);
+        // padding: $size-10*0.25;
+        // text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.25rem;
+        line-height: 1;
+
+        &:after {
+          content: ","
+        }
+
+        &:last-child {
+          &:after {
+            content: ""
+          }
+        }
+        // &:before {
+        //   content: "#";
+        //   width: 12px;
+        // }
+      }
+    }
+  }
+}

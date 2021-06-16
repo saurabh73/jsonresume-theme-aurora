@@ -30,7 +30,7 @@
   .qr-heading {
     grid-area: qr-heading;
     text-align: center;
-    color: $highlight-color;
+    color: var(--highlight-color);
 
     font-family: "Caveat", cursive;
   }
@@ -43,41 +43,41 @@
     margin-right: -3px;
 
     .qr-background {
-      fill: $page-background;
+      fill: var(--page-background);
     }
     .qr-primary {
-      fill: $page-color;
+      fill: var(--page-color);
     }
     .qr-none {
       fill: none;
     }
     .qr-accent {
-      fill: $highlight-color;
+      fill: var(--highlight-color);
     }
 
     @media print {
-      background: linear-gradient(to right, $highlight-color 2px, transparent 2px) 0 0,
-        linear-gradient(to right, $highlight-color 2px, transparent 2px) 0 100%,
-        linear-gradient(to left, $highlight-color 2px, transparent 2px) 100% 0,
-        linear-gradient(to left, $highlight-color 2px, transparent 2px) 100% 100%,
-        linear-gradient(to bottom, $highlight-color 2px, transparent 2px) 0 0,
-        linear-gradient(to bottom, $highlight-color 2px, transparent 2px) 100% 0,
-        linear-gradient(to top, $highlight-color 2px, transparent 2px) 0 100%,
-        linear-gradient(to top, $highlight-color 2px, transparent 2px) 100% 100%;
+      background: linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, var(--highlight-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, var(--highlight-color) 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, var(--highlight-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, var(--highlight-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, var(--highlight-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, var(--highlight-color) 2px, transparent 2px) 100% 100%;
 
       background-repeat: no-repeat;
       background-size: $size-10 * 2 $size-10 * 2;
     }
 
     &:hover {
-      background: linear-gradient(to right, $highlight-color 2px, transparent 2px) 0 0,
-        linear-gradient(to right, $highlight-color 2px, transparent 2px) 0 100%,
-        linear-gradient(to left, $highlight-color 2px, transparent 2px) 100% 0,
-        linear-gradient(to left, $highlight-color 2px, transparent 2px) 100% 100%,
-        linear-gradient(to bottom, $highlight-color 2px, transparent 2px) 0 0,
-        linear-gradient(to bottom, $highlight-color 2px, transparent 2px) 100% 0,
-        linear-gradient(to top, $highlight-color 2px, transparent 2px) 0 100%,
-        linear-gradient(to top, $highlight-color 2px, transparent 2px) 100% 100%;
+      background: linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to right, var(--highlight-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, var(--highlight-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, var(--highlight-color) 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, var(--highlight-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, var(--highlight-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, var(--highlight-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, var(--highlight-color) 2px, transparent 2px) 100% 100%;
 
       background-repeat: no-repeat;
       background-size: $size-10 * 2 $size-10 * 2;
@@ -90,7 +90,7 @@
         left: -100px;
         font-family: "Yellowtail", cursive;
         font-size: 24px;
-        color: $highlight-color;
+        color: var(--highlight-color);
         display: inline-block;
         transform: rotate(-20deg);
       }
@@ -107,7 +107,7 @@
         top: 55px;
         left: -50px;
         font-size: 40px;
-        color: $highlight-color;
+        color: var(--highlight-color);
         display: inline-block;
         transform: rotate(-20deg);
       }

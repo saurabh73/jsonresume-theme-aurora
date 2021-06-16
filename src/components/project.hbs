@@ -1,0 +1,19 @@
+<li class="project-item">
+  {{#with project}}
+  <h4 class="title">{{name}}</h4>
+  {{#each roles}}
+  <p class="role">{{this}}</p>
+  {{/each}}
+  <p class="description">{{description}}</p>
+  {{#if website}}
+  <p><strong>Link: </strong> <a class="website" href="{{website}}">{{website}}</a></p>
+  {{/if}}
+ 
+  <ul class="tech-tags">
+    <li><strong>Technology Used:</strong></li>
+    {{#each keywords}}
+    <li class="badge">{{this}}</li>
+    {{/each}}
+  </ul>
+  {{/with}}
+</li>

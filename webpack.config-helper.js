@@ -43,7 +43,8 @@ module.exports = (options) => {
 			]),
 			new Webpack.DefinePlugin({
 				"process.env": {
-					NODE_ENV: JSON.stringify(options.isProduction ? "production" : "development")
+					NODE_ENV: JSON.stringify(options.isProduction || "development"),
+					THEME_NO: JSON.stringify(process.env.THEME_NO || '0'),
 				}
 			})
 		],

@@ -8,9 +8,13 @@
         <a class="company" href={{url}}><strong>{{company}}</strong></a>
         <span class="year"><strong>{{dateFormat startDate 'MMM yyyy'}} - {{#if endDate}}{{dateFormat endDate 'MMM yyyy'}}{{/if}}{{#unless endDate}}present{{/unless}}</strong></span>
       </div>
-      <p class="description">
-        {{summary}}
-      </p>
+      <ul class="description">
+        {{#each highlights}}
+        <li>
+          {{this}}
+        </li>
+        {{/each}}
+      </ul>
     </li>
     {{/each}}
   </ul>

@@ -1,5 +1,6 @@
 .project-page {
-  color: $page-color;
-  background-color: $page-background;
+  color: var(--page-color);
+  background-color: var(--page-background);
   padding: $page-margin;
+  display: flex;
 }

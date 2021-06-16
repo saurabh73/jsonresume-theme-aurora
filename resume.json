@@ -35,27 +35,42 @@
   },
   "work": [
     {
-      "company": "Wipro Technology",
+      "company": "Wipro Limited",
       "position": "Technologist",
       "startDate": "2016-01-04",
-      "summary": "Lorem ipsum dolor sit amet,adipiscing elit. Donec eu ullamcorper ex, ut pellentesque tellus. Vivamus eu nibh id urna molestie cursus. Nulla tempor, ex in interdum aliquet, tellus justo volutpat sem, in fringilla lorem orci ac est. Morbi risus nunc, tempus id nisi eget, semper elementum neque. Maecenas eu quam nibh. Aliquam dignissim efficitur ex, sed dignissim arcu finibus sit amet. Vestibulum tincidunt finibus orci, malesuada tempor est tempus vitae.  Nunc malesuada nulla quis tellus facilisis molestie. Ut hendrerit metus at lobortis tempus. Sed a blandit lectus.",
-      "website": "https://www.wipro.com"
+      "summary": "",
+      "website": "https://www.wipro.com",
+      "highlights": [
+        "Worked to develop the system for Capital One, to avoid being blacklisted by Spamhaus, with analyzing email bounce events.",
+        "Involved in development & maintenance of the systems for credit card limit increase opt-ins and card account preferences.",
+        "Built a cross-platform mobile App with Ionic for a POC project which tags customers bank transactions.",
+        "Automated application testing strategy in CI/CD pipelines.",
+        "Built internal tools to boost team's productivity."
+      ]
     },
     {
-      "company": "Infogain India Pvt. Ltd.",
+      "company": "Infogain Corporation",
       "endDate": "2015-12-31",
       "position": "Software Engineer",
       "startDate": "2014-10-01",
-      "summary": "Worked as Software Engineer, and got hands-on experience on various technologies credits to extensive Instructor-led training program of Infogain. I worked for NCR Corporation for my project engagement on their monitoring product called VISION, which monitors administer ATMs for their various Banking clients. The project included the development of RESTful web services.",
-      "website": "https://www.infogain.com/"
+      "summary": "",
+      "website": "https://www.infogain.com/",
+      "highlights": [
+        "Got hands-on experience on various technologies credits to extensive Instructor-led training program of Infogain. ",
+        "Responsible for maintenance of NCR's monitoring product called VISION, which monitors administer ATMs."
+      ]
     },
     {
-      "company": "Wipro Technologies",
+      "company": "Wipro Limited",
       "endDate": "2013-07-01",
-      "position": "Intern",
+      "position": "Software Engineer Intern",
       "startDate": "2013-05-01",
-      "summary": "This Internship helped me to gain knowledge about Software Development Cycle and XML parsing and enhanced my Java skills.",
-      "website": "https://www.wipro.com/"
+      "summary": "",
+      "website": "https://www.wipro.com/",
+      "highlights": [
+        "Learned about Software Development Life Cycle.",
+        "Written Java based XML Marshaller for MT 101 SWIFT message payment request."
+      ]
     }
   ],
   "education": [
@@ -115,12 +130,6 @@
       "url": "https://www.youracclaim.com/badges/a8c885bb-e3cb-4b7c-932f-6a6408998bbf/linked_in_profile",
       "name": "IBM Certified Application Developer - Cloud Platform V1",
       "date": "2016-06-10"
-    },
-    {
-      "issuer": "MongoDB, Inc.",
-      "url": "https://res.cloudinary.com/dren4jgbp/image/upload/v1623634556/resume/MongoCertificate.pdf",
-      "name": "M101J: MongoDB for Java Developers",
-      "date": "2015-02-26"
     },
     {
       "issuer": "Microsoft",
@@ -302,6 +311,114 @@
     },
     {
       "name": "Movies & Shows"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ambuhelp",
+      "description": "AmbuHelp is an attempt to create an emergency alert solution which enables user to get the nearest available ambulance and medical center, and allowing us to notify his/her emergency contacts on a single tap. Won 4th Prize for this hackathon project hosted by Wipro.",
+      "keywords": [
+        "Angular",
+        "Ionic",
+        "IBM Bluemix",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "Google Maps"
+      ],
+      "website": "https://www.youtube.com/watch?v=gw1V0Z3cS5Y",
+      "roles": [
+        "Full Stack Developer"
+      ],
+      "type": "Hackathon Project"
+    },
+    {
+      "name": "HYDRAE – Digital Messaging System",
+      "description": "Contributed to development of HYDRAE Digital Messaging System for Capital One, which enables them to  avoid Spamhouse trap based on feedback from email vendors like Sparkpost, Salesforce, etc. and create a  hygienic database system for email endpoints.  Worked on AWS lambda functions for providing file/event- based integration and triggers to the HYDRAE system. ",
+      "keywords": [
+        "Java",
+        "Spring Boot",
+        "RESTful Webservices",
+        "AWS",
+        "Apache Kafka",
+        "PostgreSQL",
+        "Docker",
+        "Jenkins"
+      ],
+      "roles": [
+        "Backend Developer"
+      ],
+      "type": "Client Project"
+    },
+    {
+      "name": "Gitbot",
+      "description": "Gitbot, is a slack bot to give basic information about the selected repository in your slack channel, help you fetching your repository code and most importantly commits to your repository with uploaded code in your channel. ",
+      "keywords": [
+        "Node.js",
+        "Git API",
+        "Slack Bot",
+        "AWS Lambda",
+        "Slack API"
+      ],
+      "website": "https://saurabh73.github.io/gitbot/",
+      "roles": [
+        "Chat Bot Developer"
+      ],
+      "type": "Side Project"
+    },
+    {
+      "name": "Jainam",
+      "description": "Jainam is a effort in hope to create a digital platform that serves the entire Jain community and makes knowledge sharing an accessible process. I've helped the team to build their REST API backed system, along with monitoring dashboard and housekeeping lambda functions.",
+      "keywords": [
+        "Java",
+        "Play Framework",
+        "Grafana",
+        "AWS",
+        "MongoDB",
+        "Gitlab Runner",
+        "Wordpress"
+      ],
+      "website": "https://www.jainam.app/",
+      "roles": [
+        "Full Stack Developer"
+      ],
+      "type": "Side Project"
+    },
+    {
+      "name": "Aquasense",
+      "description": "Aquasense is working towards the way to revolutionize how water resources systems work in the world. I've contributed towards the development of dashboard and API system for their IoT devices, along with gitlab-runner based CI/CD pipeline.",
+      "highlights": [],
+      "keywords": [
+        "Angular",
+        "D3",
+        "Node.js",
+        "Typescript",
+        "InfluxDB",
+        "MongoDB",
+        "MQTT"
+      ],
+      "website": "http://aquasense.tech/",
+      "roles": [
+        "Full Stack Developer"
+      ],
+      "type": "Side Project"
+    },
+    {
+      "name": "Train Status: Alexa Skill",
+      "description": "Alexa skill to get live status of their train by giving railway number as input. Uses AWS lambda function to  invoke action and give an appropriate response.  This BOT is powered By Railway API (https://railwayapi.com/). ",
+      "highlights": [],
+      "keywords": [
+        "Alexa Skills Kit",
+        "Node.js",
+        "AWS Lambda",
+        "Railways API"
+      ],
+      "website": "https://www.amazon.in/Saurabh-Dutta-Indian-Railway-Enquiry/dp/B077SV184N",
+      "roles": [
+        "Chat Bot Developer"
+      ],
+      "type": "Side Project"
     }
   ]
 }

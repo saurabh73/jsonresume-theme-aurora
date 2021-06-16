@@ -4,6 +4,7 @@
 	"description": "A clean Webpack 4 + Bootstrap 4 + Handlebars frontend template.",
 	"scripts": {
 		"start": "npm run watch",
+		"eslint:fix": "eslint --fix",
 		"build": "webpack --config webpack-prod.config.js --colors --optimize-minimize",
 		"watch": "webpack-dev-server --config webpack-dev.config.js --watch --colors -d"
 	},

@@ -1,29 +1,33 @@
 // Font Path
-$font-path: "../assets/fonts" !default;
+$font-path: '../assets/fonts' !default;
 //  font path
-$icon-font-path: "../fonts/";
+$icon-font-path: '../fonts/';
 // ICONS
-$icon-font-family: "icomoon" !default;
-$icon-github: "\e900";
-$icon-gitlab: "\e901";
-$icon-globe: "\e902";
-$icon-linkedin: "\e903";
-$icon-mail: "\e904";
-$icon-phone-call: "\e905";
-$icon-twitter: "\e906";
-$icon-forward: "\e969";
+$icon-font-family: 'icomoon' !default;
+$icon-github: '\e900';
+$icon-gitlab: '\e901';
+$icon-globe: '\e902';
+$icon-linkedin: '\e903';
+$icon-mail: '\e904';
+$icon-phone-call: '\e905';
+$icon-twitter: '\e906';
+$icon-forward: '\e969';
 
 
-$side-background: #231942;
-$side-color: #f3eff5;
-$page-background: #f3eff5;
-$page-color: #454955;
+:root {
+  --side-background: #ffffff;
+  --highlight-color: #000000;
+  --page-background: #ffffff;
+  --side-color: #000000;
+  --page-color: #000000;
+}
+
 $side-width: 270px;
-$highlight-color: #ee4266;
 
-$header-font: 'Oswald', "sans-serif";
-$body-font:  'Lato', "sans-serif";
+$header-font: 'Oswald', 'sans-serif';
+$body-font:  'Barlow', 'Lato', 'sans-serif';
 $monospace-font: 'Roboto Mono', 'monospace';
+$number-font: 'Barlow', 'Lato',  'sans-serif';
 $page-margin: 10mm;
 $size-10: 10px;
 

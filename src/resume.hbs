@@ -18,17 +18,21 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body class="A4">
+<body class="A4 {{themeSelector}}">
+  {{> side-menu}}
   <div id="resume">
     <div class="sheet intro-page">
-      {{> intro}}
+      {{> intro-page}}
     </div>
     <div class="sheet project-page">
-      {{> project}}
+      {{> project-page}}
     </div>
   </div>
   <button onclick="document.title='{{fileName basics.name}}'; window.print(); return false;" class="float-btn">
-      <i data-feather="download"></i>
+    <i data-feather="download"></i>
+  </button>
+  <button class="sidebar-toggle">
+    <i data-feather="menu"></i>
   </button>
 
   <script>

@@ -20,7 +20,7 @@ section.skill {
         list-style-position: inside;
         li {
           &:before, &::marker {
-            color:$highlight-color;
+            color:var(--highlight-color);
           }
           i {
             font-weight: bold;

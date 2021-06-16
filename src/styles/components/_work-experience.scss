@@ -2,6 +2,7 @@ section.work-experience {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  margin-bottom: $size-10;
 
   ul.experience-list {
     // height: 100%;
@@ -24,13 +25,13 @@ section.work-experience {
         .sub-title {
           font-size: 14px;
           font-weight: initial;
-          // color: $highlight-color;
+          // color: var(--highlight-color);
         }
       }
 
       p.designation {
         span {
-          color: $highlight-color;
+          color: var(--highlight-color);
         }
         margin-bottom: 4px;
       }
@@ -42,54 +43,37 @@ section.work-experience {
         justify-content: space-between;
 
         strong {
-          color: $highlight-color;
+          color: var(--highlight-color);
         }
         .year {
-          font-family: $monospace-font;
-          font-size: 14px;
+          font-family: $number-font;
+          // font-size: 14px;
         }
       }
-      p.description {
-        margin-bottom: 4px;
-        text-align: justify;
+      // ul.description {
+      //   margin-bottom: 4px;
+      //   text-align: justify;
+      // }
+      ul.description {
+        list-style-type: "-  ";
+        padding-left: $size-10;
+        li {
+          text-align: justify;
+          &:before, &::marker {
+            color:var(--highlight-color);
+          }
+          margin: $size-10*0.5 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
 
       // strong {
       //   font-weight: bold;
       //   font-size: 14px;
       // }
-      .tech-tags {
-        display: flex;
-        flex-direction: row;
-        font-family: monospace;
-        font-size: 14px;
-        li.badge {
-          margin: 0.25em 0.125em;
-          // background-color: #dfdfdf;
-          // color: $side-color;
-          padding: 0.25em;
-          text-align: center;
-          white-space: nowrap;
-          vertical-align: baseline;
-          border-radius: 0.25rem;
-          line-height: 1;
-
-          &:first-child {
-            padding-left: 0;
-          }
-          &:last-child {
-            padding-right: 0;
-            &:after {
-              content: "";
-            }
-          }
-
-          &:after {
-            content: ",";
-          }
-        }
-      }
-
+    
       // margin-bottom: $size-10 * 1.5;
 
       &:last-child {
