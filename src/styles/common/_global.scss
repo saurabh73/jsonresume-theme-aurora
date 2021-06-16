@@ -21,17 +21,16 @@ body {
   position: fixed;
   top: 2rem;
   right: 3rem;
-  background: transparent;
-  border-color: transparent;
+  box-shadow: 2px 2px 3px #999;
+  height: 32px;
   color: var(--highlight-color);
   transition: all 0.3s linear;
   cursor: pointer;
-
-	
+	border: none;
 }
 
 /* Sidebar Nav */
-.sidebar-header {
+.sidebar-header, .sidebar-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +79,7 @@ body {
   transition: all 0.3s linear;
   transform: translate(-100%);
 	z-index: 100;
-	width: 400px;
+	width: 256px;
 	box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
 }
 
