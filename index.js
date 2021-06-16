@@ -30,6 +30,7 @@ async function render(resume) {
     new HtmlWebpackPlugin({
       template: "./src/resume.hbs", 
       filename: "index.html",
+      cache: false,
       templateParameters: resume
     })
   );

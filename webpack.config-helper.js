@@ -5,7 +5,8 @@ const Webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ExtractSASS = new ExtractTextPlugin("./[name].[hash].css");
-const HtmlWebpackInlineStylePlugin = require('html-webpack-inline-style-plugin');
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 const PATHS = {
 	src: Path.join(__dirname, "src"),
@@ -26,8 +27,13 @@ module.exports = (options) => {
 			new HtmlWebpackPlugin({
 				template: './src/resume.hbs',
 				filename: "index.html",
+				cache: false,
 				templateParameters: require('./resume.json')
 			}),
+			new ScriptExtHtmlWebpackPlugin({
+				inline: [/\.js$/],
+			}),
+			new HTMLInlineCSSWebpackPlugin(),
 			new Webpack.DefinePlugin({
 				"process.env": {
 					NODE_ENV: JSON.stringify(options.isProduction || "development"),
