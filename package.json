@@ -1,13 +1,17 @@
 {
-	"name": "webpack-handlebars-bootstrap",
+	"name": "jsonresume-theme-aurora",
 	"version": "1.0.0",
-	"description": "A clean Webpack 4 + Bootstrap 4 + Handlebars frontend template.",
+	"description": "Aurora theme for jsonresume",
 	"scripts": {
 		"start": "npm run watch",
-		"eslint:fix": "eslint --fix",
 		"build": "webpack --config webpack-prod.config.js --colors --optimize-minimize",
 		"watch": "webpack-dev-server --config webpack-dev.config.js --watch --colors -d"
 	},
+	"keywords": [
+    "jsonresume",
+    "theme",
+    "aurora"
+  ],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/saurabh73/webpack-handlebars-bootstrap.git"
@@ -27,7 +31,7 @@
 			"semi": 2
 		}
 	},
-	"homepage": "https://github.com/saurabh73/webpack-handlebars-bootstrap#readme",
+	"homepage": "https://resume.saurabhdutta.dev",
 	"devDependencies": {
 		"@babel/core": "^7.4.4",
 		"@babel/preset-env": "^7.4.4",
@@ -49,8 +53,6 @@
 		"webpack-dev-server": "^3.3.1"
 	},
 	"dependencies": {
-		"bourbon": "^5.1.0",
-		"core-util-is": "^1.0.2",
 		"date-fns": "^2.22.1",
 		"lodash": "^4.17.21",
 		"paper-css": "^0.4.1",
