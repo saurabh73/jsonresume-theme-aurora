@@ -13,7 +13,6 @@ const PATHS = {
 	dest: Path.join(__dirname, "public")
 };
 
-
 module.exports = (options) => {
 
 	let webpackConfig = {
@@ -34,11 +33,9 @@ module.exports = (options) => {
 				inline: [/\.js$/],
 			}),
 			new HTMLInlineCSSWebpackPlugin(),
-			new Webpack.DefinePlugin({
-				"process.env": {
-					NODE_ENV: JSON.stringify(options.isProduction || "development"),
-					THEME_NO: JSON.stringify(process.env.THEME_NO || '0'),
-				}
+			new Webpack.EnvironmentPlugin({
+					NODE_ENV: options.isProduction ? "production" : "development",
+					THEME_NO: options.THEME_NO || process.env.THEME_NO || '0',	
 			})
 		],
 		module: {

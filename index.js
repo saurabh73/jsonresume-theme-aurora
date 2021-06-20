@@ -25,6 +25,7 @@ async function runWebpack(compiler) {
 
 // TODO: return index.html with inline template
 async function render(resume) {
+  console.log("Rendering with THEME ", process.env.THEME_NO || 0);
   // extract and replace HtmlWebpackPlugin with provided resume
   const plugins = config.plugins.filter(i => (((i instanceof HtmlWebpackPlugin) == false) && ((i instanceof ScriptExtHtmlWebpackPlugin) == false)) && ((i instanceof HTMLInlineCSSWebpackPlugin) == false));
   plugins.push(
