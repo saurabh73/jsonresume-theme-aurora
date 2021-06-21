@@ -19,7 +19,6 @@ async function runWebpack(compiler) {
         console.error(err);
         return reject(err);
       }
-      console.log(res)
       resolve(res);
     });
   });
