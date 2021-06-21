@@ -15,6 +15,7 @@ const PATHS = {
 
 module.exports = (options) => {
 
+
 	let webpackConfig = {
 		devtool: options.devtool,
 		entry: [Path.join(PATHS.src, "scripts", "script.js")],
