@@ -26,8 +26,6 @@ async function runWebpack(compiler) {
 // TODO: return index.html with inline template
 async function render(resume) {
   try {
-
-
     console.log("Rendering with THEME ", process.env.THEME_NO || 0);
     // extract and replace HtmlWebpackPlugin with provided resume
     const plugins = config.plugins.filter(i => (((i instanceof HtmlWebpackPlugin) == false) && ((i instanceof ScriptExtHtmlWebpackPlugin) == false)) && ((i instanceof HTMLInlineCSSWebpackPlugin) == false));
@@ -43,12 +41,8 @@ async function render(resume) {
       new HTMLInlineCSSWebpackPlugin()
     );
     config.plugins = plugins;
-    console.log(JSON.stringify(config, null, 2));
-    console.log("Create compiler")
     const compiler = webpack(config);
-    console.log("run runWebpack")
     await runWebpack(compiler);
-    console.log("end runWebpack")
     const filepath = Path.join(PATHS.dest, "index.html")
     return fs.readFileSync(filepath, "utf-8");
   } catch (err) {
