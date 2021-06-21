@@ -19,6 +19,7 @@ module.exports = (options) => {
 	let webpackConfig = {
 		devtool: options.devtool,
 		entry: [Path.join(PATHS.src, "scripts", "script.js")],
+		context: __dirname,
 		output: {
 			path: PATHS.dest,
 			filename: "./scripts/[name].[hash].js"

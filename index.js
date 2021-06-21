@@ -27,13 +27,13 @@ async function runWebpack(compiler) {
 // TODO: return index.html with inline template
 async function render(resume) {
   try {
-    console.log(__dirname);
+    console.log(Path.join(__dirname, "src/resume.hbs"));
     console.log("Rendering with THEME ", process.env.THEME_NO || 0);
     // extract and replace HtmlWebpackPlugin with provided resume
     const plugins = config.plugins.filter(i => (((i instanceof HtmlWebpackPlugin) == false) && ((i instanceof ScriptExtHtmlWebpackPlugin) == false)) && ((i instanceof HTMLInlineCSSWebpackPlugin) == false));
     plugins.push(
       new HtmlWebpackPlugin({
-        template: __dirname + "/src/resume.hbs",
+        template: Path.join(__dirname, "src/resume.hbs"),
         filename: "index.html",
         templateParameters: resume
       }),
@@ -44,6 +44,7 @@ async function render(resume) {
     );
     config.plugins = plugins;
     const compiler = webpack(config);
+    compiler.context = __dirname;
     await runWebpack(compiler);
     const filepath = Path.join(PATHS.dest, "index.html")
     return fs.readFileSync(filepath, "utf-8");
